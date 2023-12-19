@@ -1,5 +1,4 @@
 package com.driver.test;
-import com.driver.*;
 import static org.junit.Assert.*;
 import org.junit.jupiter.api.Test;
 
@@ -12,9 +11,12 @@ public class TestCases {
     
     class B extends A{
         String meth(){
-            super.meth();
-            return "Method is overridden in Extendend class B";
+            return  "Method is overridden in Extendend class B";
         }
     
+    }
+    public static void main(String[] args) {
+        A a= new B();
+        System.out.println(b.meth());
     }
 }

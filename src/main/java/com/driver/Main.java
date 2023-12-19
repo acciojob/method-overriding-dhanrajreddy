@@ -1,10 +1,16 @@
 package com.driver;
-import com.driver.test;
-import com.driver.test.TestCases;
+class A{
+    String meth(){
+        return "Invoking method from class A";
+    }
+}
+
+class B extends A{
+
+}
 public class Main {
-    
   public static void main(String[] args) {
-     TestCases.A o =TestCases.new B();
-    o.meth();
+   A a=new B();
+   System.out.println(a.meth());
   }
 }
