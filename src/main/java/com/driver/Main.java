@@ -8,14 +8,14 @@ public class Main {
     }
     
     class B extends A{
-        super.meth();
+        @Override
         String meth(){
             return  "Method is overridden in Extendend class B";
         }
     
     }
   public static void main(String[] args) {
-   A a=new B();
-   System.out.println(a.meth());
+   B b=new B();
+   System.out.println(b.meth());
   }
 }
